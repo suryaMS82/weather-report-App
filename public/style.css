@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-header{
+    background-color: darkolivegreen;
+    padding: 10px;
+}
+.content-header a{
+    text-decoration: none;
+    color: darkred;
+    font-size: 35px;
+}
+.content-header h1{
+    margin: 10px 30px;
+}
+.fa-cloud{
+    margin-left:20px;
+    color: white;
+    font-size:50px;
+}
+.content-body{
+    background-color: whitesmoke;
+    padding:2% 7%;
+}
+.content-body h2{
+    font-size: 25px;
+    color: black;
+    font-style: bold;
+}
+.content-body p{
+    color:grey;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-style: italic;
+    width: 70%;
+}
+.content-body .ptag{
+    color: rgb(88, 87, 87);
+}
+.content-body big{
+    color: indianred;
+}
+.weather-data{
+    margin:5% 35%;
+    background-color: white;
+}
+.text-data{
+    display: flex;
+
+}
+.text-data input{
+    font-size: 18px;
+    width:300px;
+    outline: none;
+}
+.text-data button{
+    padding: 4px 10px;
+    border: orangered solid 2px;
+    border-radius: 5px;
+    background-color: tomato;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.dynamic-data{
+    margin-top: 30px;
+}
+.weather-report{
+    background-color: rgb(231, 226, 226);
+    margin: 5% 30%;
+    width: 500px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-left: 2px solid maroon;
+    border-right: maroon solid 2px;
+}
+.dynamic-data{
+    margin-top: 40px;
+    padding: 25px;
+    display: flex;
+}
+.dynamic-data .cityname h2{
+    color: grey;
+    font-weight: 300;
+    color: black;
+}
+.tempinfo{
+    margin-left: 42%;
+
+}
+
+.tempinfo .temp{
+    display: flex;
+}
+.tempinfo .temp h2{
+    color: maroon;
+
+}
+.tempinfo .temp img{
+    padding-left: 8px;
+}
+.tempinfo p{
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 200;
+}
+.climate-data{
+margin-bottom: 15px;
+margin-left: 20px;
+}
+.climate-data h3{
+    padding-bottom: 15px;
+    font-weight: 100;
+    color: rgb(49, 48, 48);
+}
+@media (max-width:800px) {
+    .weather-data{
+        margin: 5% 20%;
+    }  
+    .weather-report{
+        margin: 5% 20%;
+        width: 420px;
+    }
+    .tempinfo{
+        margin-left:35%;
+    
+    }
+    @media (max-width:650px){
+ 
+        .weather-report{
+            margin: 5% 12%;
+            width: 420px;
+        }
+        .tempinfo{
+            margin-left: 30%;
+        }
+
+    }
+
+
+    
+}
+
+
+
+

@@ -1,0 +1,43 @@
+<div class="content-header">
+    <h1><a href="/">Weather App<i class="fa fa-cloud"></i></a></h1>
+     </div>
+    
+    
+     <div class="content-body">
+       <h2>Weather reporting...</h2>
+       <p>We collect and process weather data from different sources such as global and local weather models, satellites, radars and a vast network of weather stations .For each point on the globe, we provide historical, current and forecasted weather data .Access current weather data for any location including over 200,000 cities. </p> 
+       <p class="ptag">Please , enter your prefered <big>city</big> name below to get <big>current weather </big> information</p> 
+     </div>
+    
+    
+     <div class="weather-data">
+    <div class="text-data">
+      <form action="/" method="post">
+    <input type="search" name="city" placeholder="enter city name">
+    <button type="submit">search</button></form>
+    </div></div>
+  
+  <div class="weather-report">
+    <div class="dynamic-data">
+        <div class="cityname">
+        <h2><%= weather.city %></h2>
+        </div>
+        <div class="tempinfo">
+        <div class="temp">
+        <h2><%= weather.temperature %> <sup> 0</sup>C</h2>
+        <img src="http://openweathermap.org/img/w/<%= weather.icon %>.png" alt="icon">
+        
+    </div>
+    <p><%= weather.description %></p>
+    <p>humidity :<%= weather.humidity %> g/m<sup>3</sup></p>
+        <p>sea-level :<%= weather.sealevel %> m</p>
+         </div>
+         </div>
+         <div class="climate-data">
+            <% var date= new Date() %>
+            <% var weeks=['Sun','Mon','Tues','Wens','Thurs','Fri','Sat'] %>
+            <% var week=weeks[date.getDay()] %>
+            <% var datedata=[date.getDate() , week , date.getFullYear()] %>
+            <h3><%= datedata %></h3>
+             </div>
+     </div>  
